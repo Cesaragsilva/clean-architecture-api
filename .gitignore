@@ -11,3 +11,6 @@
 /CleanArchitecture/CleanArchitecture.Application/bin/Debug/net6.0
 /CleanArchitecture/CleanArchitecture.Core/bin/Debug/net6.0
 /CleanArchitecture/CleanArchitecture.Infraestructure/bin/Debug/net6.0
+/CleanArchitecture/CleanArchitecture.API/bin/Debug/net6.0
+/CleanArchitecture/CleanArchitecture.API/obj
+/CleanArchitecture/.vs/CleanArchitecture
