@@ -3,3 +3,11 @@
 ################################################################################
 
 /CleanArchitecture/CleanArchitecture/obj
+/CleanArchitecture/.vs/CleanArchitecture/v17
+/CleanArchitecture/CleanArchitecture.Application/obj
+/CleanArchitecture/CleanArchitecture.Core/obj
+/CleanArchitecture/CleanArchitecture.Infraestructure/obj
+/CleanArchitecture/CleanArchitecture/bin/Debug/net6.0
+/CleanArchitecture/CleanArchitecture.Application/bin/Debug/net6.0
+/CleanArchitecture/CleanArchitecture.Core/bin/Debug/net6.0
+/CleanArchitecture/CleanArchitecture.Infraestructure/bin/Debug/net6.0
