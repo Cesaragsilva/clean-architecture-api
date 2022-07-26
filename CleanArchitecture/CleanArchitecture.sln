@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Core", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Infraestructure", "CleanArchitecture.Infraestructure\CleanArchitecture.Infraestructure.csproj", "{CDBDDD78-C8EE-43F3-AAB7-3BA6C8156716}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Test", "CleanArchitecture.Test\CleanArchitecture.Test.csproj", "{04C48407-92FE-4614-A74B-D364500D9522}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CDBDDD78-C8EE-43F3-AAB7-3BA6C8156716}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDBDDD78-C8EE-43F3-AAB7-3BA6C8156716}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDBDDD78-C8EE-43F3-AAB7-3BA6C8156716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04C48407-92FE-4614-A74B-D364500D9522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C48407-92FE-4614-A74B-D364500D9522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C48407-92FE-4614-A74B-D364500D9522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C48407-92FE-4614-A74B-D364500D9522}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
