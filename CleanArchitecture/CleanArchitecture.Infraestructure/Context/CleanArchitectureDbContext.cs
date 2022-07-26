@@ -16,6 +16,14 @@ namespace CleanArchitecture.Infraestructure.Context
             builder.Entity<Car>()
                 .Property(x => x.Model)
                 .IsRequired();
+
+            builder.Entity<Car>()
+                .Property(x => x.IsActive)
+                .IsRequired();
+
+            builder.Entity<Car>()
+                .Property(x => x.CreatedAt)
+                .IsRequired();
         }
     }
 }

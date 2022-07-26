@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace CleanArchitecture.API.Configurations
 {
-    public static class DIConfiguration
+    public static class IoCConfiguration
     {
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {

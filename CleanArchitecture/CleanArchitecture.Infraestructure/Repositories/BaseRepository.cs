@@ -38,6 +38,10 @@ namespace CleanArchitecture.Infraestructure.Repositories
 
             return await query.AsNoTracking().Where(filter).ToListAsync();
         }
+        public async Task<List<T>> GetAllAsync()
+        {
+            return await _cleanArcDbContext.Set<T>().AsNoTracking().ToListAsync();
+        }
 
         public async Task<T> AddAsync(T entity)
         {

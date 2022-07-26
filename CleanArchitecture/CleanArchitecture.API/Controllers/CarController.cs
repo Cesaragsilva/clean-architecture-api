@@ -41,5 +41,15 @@ namespace CleanArchitecture.API.Controllers
 
             return Ok(car);
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id) 
+        {
+            var car = await _carServiceApplication.DeleteAsync(id);
+            if (car is null)
+                return NotFound();
+
+            return Ok(car);
+        }
     }
 }

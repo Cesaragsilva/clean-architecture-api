@@ -8,5 +8,6 @@ namespace CleanArchitecture.Application.Interfaces
         Task<CarViewModel> CreateAsync(CarInputModel carInputModel);
         Task<List<CarViewModel>> GetAllAsync();
         Task<CarViewModel> GetByIdAsync(int id);
+        Task<CarViewModel> DeleteAsync(int id);
     }
 }

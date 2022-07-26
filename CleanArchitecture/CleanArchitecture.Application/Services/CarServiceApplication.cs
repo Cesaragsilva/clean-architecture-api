@@ -1,5 +1,6 @@
 ﻿using CleanArchitecture.Application.InputModels;
 using CleanArchitecture.Application.Interfaces;
+using CleanArchitecture.Application.Mappings;
 using CleanArchitecture.Application.ViewModels;
 using CleanArchitecture.Core.Entities;
 using CleanArchitecture.Core.Interfaces.Repositories;
@@ -14,19 +15,40 @@ namespace CleanArchitecture.Application.Services
             _carRepository = carRepository;
         }
 
-        public Task<CarViewModel> CreateAsync(CarInputModel carInputModel)
+        public async Task<CarViewModel> CreateAsync(CarInputModel carInputModel)
         {
-            throw new NotImplementedException();
+            var car = carInputModel.ToEntity();
+            car = await _carRepository.AddAsync(car);
+            return car.ToViewModel();
         }
 
-        public Task<List<CarViewModel>> GetAllAsync()
+        public async Task<CarViewModel> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var data = await _carRepository.GetByIdAsync(id);
+            if (data is not null)
+            {
+                await _carRepository.DeleteAsync(data);
+                return data.ToViewModel();
+            }
+            return null;
         }
 
-        public Task<CarViewModel> GetByIdAsync(int id)
+        public async Task<List<CarViewModel>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            var data = await _carRepository.GetAllAsync();
+            if (data is not null)
+                return data.ToViewModel();
+
+            return null;
+        }
+
+        public async Task<CarViewModel> GetByIdAsync(int id)
+        {
+            var data = await _carRepository.GetByIdAsync(id);
+            if(data is not null)
+                return data.ToViewModel();
+
+            return null;
         }
     }
 }
