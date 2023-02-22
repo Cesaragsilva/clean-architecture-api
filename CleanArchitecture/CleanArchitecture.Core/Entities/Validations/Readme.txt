@@ -1,1 +1,0 @@
-﻿Into this folder, we can create some validations for an entity and use this to validate the structure of our entity.
